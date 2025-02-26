@@ -1,29 +1,51 @@
 # Cipher Tool
-## Overview
+
 Cipher Tool is a JavaFX-based desktop application that provides encryption and decryption functionalities for various file formats.
 
-## Technologies used
-- Java 17
-- JavaFX 17.0.6
-- Maven
-- JUnit 5 
-- ControlsFX 
 
-## Installation
-#### 1. Clone the Repository
+## Tech Stack
+
+Java(17), JavaFX, Maven, JUnit 5, ControlsFX
+
+
+## Features
+
+- Encrypt and Decrypt Files
+- Use different Encryption Systems (AES, CHACHA20)
+- JavaFX GUI
+
+
+## Run Locally
+
+Clone the project
+
 ```bash
-git clone https://github.com/maurinw/cipher-tool.git
-cd cipher-tool
+  git clone https://github.com/maurinw/cipher-tool.git
 ```
 
-#### 1. Build the Project
+Go to the project directory
+
 ```bash
-mvn clean package
+  cd cipher-tool
+```
+
+Build the Project
+
+```bash
+  mvn clean package
+```
+
+Run the Application
+
+```bash
+  mvn clean javafx:run
 ```
 
 
-#### 2. Run the Application
-You can run the application using the Maven JavaFX plugin:
+## Running Tests
+
+To run tests, run the following command
+
 ```bash
-mvn clean javafx:run
+  mvn test
 ```
