@@ -1,4 +1,6 @@
-package ch.beginsecure.ciphertool.system.symEnc;
+package ch.beginsecure.ciphertool.system.symEnc.impl;
+
+import ch.beginsecure.ciphertool.system.symEnc.AbstractSymEnc;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
