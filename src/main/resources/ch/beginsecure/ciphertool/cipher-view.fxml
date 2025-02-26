@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="ch.beginsecure.ciphertool.CipherController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <!-- File Selection -->
+    <HBox spacing="10.0">
+        <TextField fx:id="filePathField" promptText="Select a file..."/>
+        <Button text="Browse" onAction="#handleBrowseButtonClick"/>
+    </HBox>
+
+    <!-- Password Field -->
+    <PasswordField fx:id="passwordField" promptText="Enter password"/>
+
+    <!-- Buttons & Algorithm Selection -->
+    <HBox spacing="10.0">
+        <Button text="Encrypt" onAction="#handleEncryptButtonClick"/>
+        <Button text="Decrypt" onAction="#handleDecryptButtonClick"/>
+        <ComboBox fx:id="algorithmComboBox"/>
+    </HBox>
 </VBox>

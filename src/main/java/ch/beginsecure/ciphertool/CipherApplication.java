@@ -12,8 +12,9 @@ public class CipherApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(CipherApplication.class.getResource("cipher-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 400, 250);
-        stage.setTitle("Hello!");
+        stage.setTitle("Cipher");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
