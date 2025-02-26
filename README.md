@@ -20,25 +20,25 @@ Java(17), JavaFX, Maven, JUnit 5, ControlsFX
 Clone the project
 
 ```bash
-  git clone https://github.com/maurinw/cipher-tool.git
+git clone https://github.com/maurinw/cipher-tool.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd cipher-tool
+cd cipher-tool
 ```
 
 Build the Project
 
 ```bash
-  mvn clean package
+mvn clean package
 ```
 
 Run the Application
 
 ```bash
-  mvn clean javafx:run
+mvn clean javafx:run
 ```
 
 
