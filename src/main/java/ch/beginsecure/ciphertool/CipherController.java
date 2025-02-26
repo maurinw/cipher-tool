@@ -82,10 +82,10 @@ public class CipherController {
         try {
             if (isEncryption) {
                 systemManager.encrypt(selectedAlgorithm, inputFile, outputFile, password);
-                UIUtils.showInfo("File successfully encrypted: " + outputFile.getAbsolutePath());
+                UIUtils.showInfo("File successfully encrypted using: " + outputFile.getAbsolutePath());
             } else {
                 systemManager.decrypt(selectedAlgorithm, inputFile, outputFile, password);
-                UIUtils.showInfo("File successfully decrypted: " + outputFile.getAbsolutePath());
+                UIUtils.showInfo("File successfully decrypted using: " + outputFile.getAbsolutePath());
             }
         } catch (Exception e) {
             UIUtils.showError("Operation failed: " + e.getMessage());

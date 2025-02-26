@@ -12,7 +12,7 @@
 
     <!-- File Selection -->
     <HBox spacing="10.0">
-        <TextField fx:id="filePathField" promptText="Select a file..."/>
+        <TextField fx:id="filePathField" promptText="Select a file..." prefWidth="280"/>
         <Button text="Browse" onAction="#handleBrowseButtonClick"/>
     </HBox>
 
