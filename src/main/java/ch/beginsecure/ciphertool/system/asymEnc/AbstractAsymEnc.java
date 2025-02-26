@@ -4,7 +4,8 @@ import ch.beginsecure.ciphertool.system.EncryptionSystem;
 
 import java.io.File;
 
-public class AbstractAsymEnc implements EncryptionSystem {
+
+public abstract class AbstractAsymEnc implements EncryptionSystem {
     @Override
     public void encrypt(File inputFile, File outputFile, String password) throws Exception {
 
