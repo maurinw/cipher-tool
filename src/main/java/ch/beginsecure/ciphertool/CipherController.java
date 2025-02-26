@@ -3,7 +3,7 @@ package ch.beginsecure.ciphertool;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class CipherController {
     @FXML
     private Label welcomeText;
 

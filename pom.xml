@@ -65,7 +65,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>ch.beginsecure.ciphertool/ch.beginsecure.ciphertool.HelloApplication</mainClass>
+                            <mainClass>ch.beginsecure.ciphertool/ch.beginsecure.ciphertool.CipherApplication</mainClass>
                             <launcher>${app.name}</launcher>
                             <jlinkZipName>${app.name}</jlinkZipName>
                             <jlinkImageName>${app.name}</jlinkImageName>
