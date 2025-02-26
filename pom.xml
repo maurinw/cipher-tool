@@ -12,6 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.10.2</junit.version>
+        <app.name>ciphertool</app.name>
     </properties>
 
     <dependencies>
@@ -65,9 +66,9 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>ch.beginsecure.ciphertool/ch.beginsecure.ciphertool.HelloApplication</mainClass>
-                            <launcher>app</launcher>
-                            <jlinkZipName>app</jlinkZipName>
-                            <jlinkImageName>app</jlinkImageName>
+                            <launcher>${app.name}</launcher>
+                            <jlinkZipName>${app.name}</jlinkZipName>
+                            <jlinkImageName>${app.name}</jlinkImageName>
                             <noManPages>true</noManPages>
                             <stripDebug>true</stripDebug>
                             <noHeaderFiles>true</noHeaderFiles>
