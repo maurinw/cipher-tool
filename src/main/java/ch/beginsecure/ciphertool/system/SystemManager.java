@@ -2,6 +2,7 @@ package ch.beginsecure.ciphertool.system;
 
 
 import ch.beginsecure.ciphertool.system.symEnc.impl.AesEnc;
+import ch.beginsecure.ciphertool.system.symEnc.impl.ChaCha20Enc;
 
 import java.io.File;
 import java.util.HashMap;
@@ -13,6 +14,7 @@ public class SystemManager {
 
     public SystemManager() {
         registerAlgorithm("AES", new AesEnc());
+        registerAlgorithm("ChaCha20", new ChaCha20Enc());
     }
 
     public void registerAlgorithm(String name, EncryptionSystem algorithm) {
